@@ -13,6 +13,19 @@
 ### Second. Train Your Model
 &nbsp;&nbsp;&nbsp;&nbsp;Use the code segment line:218 in face_train_use_keras when training the model and comment out the code segment line:225. The model will be saved in the model folder;
 <br />&nbsp;&nbsp;&nbsp;&nbsp;To evaluate the model, use the code segment line:225 and comment out the code segment line:218
+  '''
+    #训练模型。评估时这段代码不用，注释掉
+    model = Model()
+    model.build_model(dataset)
+    model.train(dataset)
+    model.save_model(file_path = './model/me.face.model.h5')
+  '''
+  '''
+    # 评估模型。训练时，这段代码删除注释
+    model = Model()
+    model.load_model(file_path='./model/me.face.model.h5')
+    model.evaluate(dataset)
+  '''
 ### Last. Run
 &nbsp;&nbsp;&nbsp;&nbsp;Open the shell in path <Your Path\2_model>, enter the command <python face_predict.py 0>
 
