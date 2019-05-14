@@ -25,7 +25,7 @@
     model.load_model(file_path='./model/me.face.model.h5')
     model.evaluate(dataset)
 ```
-&nbsp;&nbsp;&nbsp;&nbsp;Enter shell command <python face_train_use_keras.py>.
+&nbsp;&nbsp;&nbsp;&nbsp;Enter shell command '<python face_train_use_keras.py>'.
 ### Last. Run
 &nbsp;&nbsp;&nbsp;&nbsp;Open the shell in path <Your Path\2_model>, enter the command <python face_predict.py 0>
 
